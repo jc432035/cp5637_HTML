@@ -1,0 +1,305 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input,
+textarea, blockquote{
+	margin:0;
+	padding:0;
+}
+/* ensure HTML5 semantic elements work in older browsers */
+header, section, footer, aside, nav, article, figure
+{
+	display: block;
+	margin-bottom:5px;
+}
+@font-face{
+	font-family: 'HappyMonkey-Regular';
+	src: url('../fonts/HappyMonkey-Regular.eot'); /* IE9 */
+	src: url('../fonts/HappyMonkey-Regular.eot?#iefix') format('embedded-opentype'), 
+/*IE - IE8*/
+	url('../fonts/HappyMonkey-Regular.woff') format('woff'), /* Modern Browsers */
+	url('../fonts/HappyMonkey-Regular.ttf') format('truetype'), /* Safari, Android, 
+	iOS */
+	url('../fonts/HappyMonkey-Regular.svg#webfont') format('svg'); /* legacy iOS */
+}
+.letterpress { 
+ border-radius: 10px; /* Modern Browsers */
+ -moz-border-radius: 10px; /* legacy Mozilla */
+ -webkit-border-radius: 10px; /* legacy Safari */
+ background-color: #474747; 
+ padding: 10px;
+ width: 460px;
+ font: 70px Tahoma, Helvetica, Arial, Sans-Serif;
+ text-align: center;
+ color: #222;
+ text-shadow: 0px 2px 3px #555;
+}
+.opacity {
+ opacity: .6; /* Modern Browsers */
+ filter: alpha(opacity=60); /* legacy IE */
+}
+/* structure */
+html{
+	background-color:#fff;
+}
+body{
+	font-family:Arial, sans-serif;
+	color:#464646;
+	font-size:16px;
+	}
+#container{
+	width:960px;
+	margin:auto;
+	padding:0 20px 0 20px;
+}
+#container p{
+	line-height:30px;
+}
+#main{
+	float:left;
+	width:55%;
+}
+aside{
+	float:right;
+	width:40%;
+}
+/* headings */
+h1{
+	font-family: 'HappyMonkey-Regular';
+	color:#cc2e2e;
+	 font-size:70px;
+	 text-align: center;
+	margin:40px 0 0 0;
+	box-shadow: 5px 5px 2px rgba(0,0,0,0.5); /* Modern Browsers */
+	 -moz-box-shadow: 5px 5px 2px rgba(0,0,0,0.5); /* legacy Mozilla */
+	 -webkit-box-shadow: 5px 5px 2px rgba(0,0,0,0.5); /* legacy Safari */
+}
+h2{
+	color:#cc2e2e;
+	font-size:30px;
+	width:350px;
+	margin:20px auto 40px auto;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	text-align:center;
+}
+h3{
+	font-family:'HappyMonkey-Regular';
+	font-size:30px;
+	color:#cc2e2e;
+	text-align: center;
+	margin-top:20px;
+	margin-bottom:20px;
+	border-bottom:1px dashed #ccc;
+	padding-top:20px ;
+	border-radius: 50px; /* Modern Browsers */
+	 -moz-border-radius: 20px; /* legacy Mozilla */
+	 -webkit-border-radius: 20px; /* legacy Safari */
+	 background-color: rgba(0,0,0,0.1); 
+	 padding: 10px;
+	 width: 400px;
+	 
+}
+/* nav */
+nav{
+	background-color:#cc2e2e;
+}
+nav ul{
+	text-align:center;
+	list-style-type:none;
+}
+nav li{
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	width:120px;
+	margin-right:-5px;
+}
+nav a{
+	text-decoration:none;
+	color:White;
+	display:block;
+}
+nav a:hover{
+	background-color:black;
+}
+/* footer */
+footer{
+	border-top:1px solid #ccc;
+	margin:0 0 20px 0;
+	clear:both;
+}
+footer p{
+	color:#aaa;
+	text-align:center;
+}
+/* links */
+#container a:link, #container a:visited{
+	color:#587498;
+	text-decoration:none;
+	border-bottom:1px dashed #587498;
+}
+#container a:hover, #container a:active{
+border:none;
+}
+/* forms */
+label{
+	display:block;
+	float:left;
+	width:150px;
+}
+input{
+	height:20px;
+}
+label, input{
+	margin:5px 0 5px 0;
+}
+input[type="submit"]{
+	background-color:black;
+	border-radius: 4px;
+	color:#fff;
+	font-size:16px;
+	cursor:pointer;
+	padding:4px 10px 4px 10px;
+	margin:20px 0 0 0;
+	border:none;
+	height:auto;
+}
+input[type="submit"]:hover {
+	background-color: #999;
+}
+/* classes */
+.active{
+	background-color:black;
+}
+.mTop20{
+	margin:20px 0 0 0;
+}
+.mBottom20{
+	margin:0 0 20px 0;
+}
+/* media */
+video{
+	background-color:black;
+}
+.video{
+	text-align:center;
+}
+table ,td,th {
+border:2px solid;
+padding:5px;
+text-align:center;
+
+}
+table {
+    font-family:Tahoma; 
+	background-color:#fff;
+	border-collapse: collapse;
+    border: 2px solid #666666;
+} 
+th{
+background-color:#EAEAEA;
+}
+.alignCenter{
+text-align:center;
+}
+.tableCenter{
+margin:auto;
+}
+.altrow{
+background-color:#666666;
+}	
+fieldset {
+	float: left;
+	width: 140px;
+	margin-left:3em;
+	height:680px;
+}
+.PIleft label {
+	float: left;
+	width: 450px;
+	height:1.5em;
+}
+.PIleft{
+padding-left:10px;
+}
+.PIright {
+float:center;
+width:450px;
+padding-left:10px;
+/*height:auto;*/
+}
+#div_buttons {
+	margin-top:2em;
+	padding-left:2em;
+	}
+#sidenav a{
+font-size:2em;
+text-decoration:none;
+margin-left:5px;
+padding:1%;
+}
+.classtablecentre{
+margin:auto;
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
